@@ -1,0 +1,1177 @@
+html, body {
+  margin: 0; 
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* prevents horizontal scroll globally */
+  box-sizing: border-box;
+}
+
+body {
+/* background hex*/
+  background-color: #121822;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 10px 30px;
+}
+/* profile border hex*/
+.popup-tiers-rows {
+  border: 2px solid #283342;
+  border-radius: 8px;
+  padding: 12px 10px;
+  background: #121212;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  user-select:none;
+  max-height: 235px;
+  overflow-y: auto;
+}
+/* topbar and topbar border hex*/
+.streak-box-topbar {
+  background: #121822;
+  border: 2px solid #18202a;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Remove max-width */
+  width: 100%;  /* Make it fill horizontally */
+  max-width: none;
+}
+
+.streak-box-leaderboard {
+  background: #1e2333;
+  border: 2px solid #18202a;
+  border-radius: 10px;
+  margin: 0 auto 30px;
+  padding: 12px 15px 20px;
+  width: 100%;  /* full width */
+  max-width: none;
+  overflow-x: auto; /* enable horizontal scroll ONLY if needed */
+}
+
+.tabs-streak-box {
+  max-width: 1100px;
+  margin: 15px auto 10px;
+  padding: 6px 10px;
+  border: 2px solid #18202a;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 80px;
+  height: auto;
+  user-select: none;
+}
+
+#search-input {
+  background-color: #1a222f;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-weight: normal;
+  user-select: text;
+  min-width: 140px;
+  font-size: 1em;
+  max-width: 200px;
+}
+#search-input:focus {
+  outline: 2px solid #1a222f;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  max-width: 1100px;
+  margin: 10px auto 30px;
+}
+
+#tabs-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  width: 100%;
+  max-width: none;
+  padding: 6px 10px;
+  /* Optionally add box-sizing */
+  box-sizing: border-box;
+}
+
+.tab {
+  padding: 8px 15px;
+  background-color: #10161d;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 2px solid #18202a;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  width: 80px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.tab:hover {
+  background-color: #171f2a;
+  border-color: #18202a;
+}
+
+.tab.active {
+  background-color: #171f2a;
+  border-color: #18202a;
+}
+
+.tab img {
+  width: auto;
+  height: 40px; /* or any fixed height that fits nicely */
+  max-width: 100%;
+  object-fit: contain;
+}
+
+#middle-right-buttons {
+  max-width: 1100px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.info-button {
+  background-color: #1e2939;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+  font-size: 0.9em;
+  position: relative;
+  z-index: 1002;
+}
+.info-button img {
+  width: 18px;
+  height: 18px;
+}
+.info-button:hover {
+  background-color: #1c2634;
+}
+
+.extra-icon {
+  width: 30px;
+  height: 30px;
+  user-select:none;
+}
+
+.discord-button {
+  background-color: #1e2939;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+.discord-button:hover {
+  background-color: #1c2634;
+}
+
+.info-popup {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #121822;
+  border: 2px solid #18202a;
+  border-radius: 8px;
+  width: 320px;
+  padding: 10px 14px;
+  display: none;
+  z-index: 1001;
+  user-select: none;
+}
+
+.info-tab {
+  background: #222a38;
+  border: none;
+  border-radius: 5px 5px 0 0;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 12px;
+  width: 50%;
+  text-align: center;
+  font-size: 1em;
+  user-select: none;
+  border-bottom: 2px solid transparent;
+  transition: background-color 0.3s ease;
+  float: left;
+}
+.info-tab:hover {
+  background-color: #222a38;
+}
+.info-tab.active {
+  background-color: #283041;
+  border-bottom: 2px solid #39455c;
+  font-weight: 700;
+}
+
+#info-content {
+  clear: both;
+  padding: 8px 4px;
+  font-size: 0.9em;
+  line-height: 1.3em;
+  color: white;
+  user-select:none;
+}
+
+.info-rank-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.info-rank-line img {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+.info-rank-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+}
+.info-rank-text .rank-name {
+  font-size: 1.15em;
+}
+.info-rank-text .rank-desc {
+  font-size: 0.85em;
+  color: #ccc;
+  margin-top: 2px;
+}
+
+.info-content img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.info-line {
+  margin: 6px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-arrow {
+  width: 30px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.points-pair {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.points-pair > div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+#tier-boxes-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto 30px auto;
+}
+
+#tier-boxes-container .position-overall-streak {
+  display: none;
+}
+
+.tier-box {
+  border: 2px solid #121822;
+  border-radius: 8px;
+  width: 180px;
+  padding: 12px 10px;
+  box-sizing: border-box;
+  min-height: 220px;
+  background: #1e2333;
+  color: white;
+}
+
+.tier-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 0;
+  margin: -12px -10px 12px -10px;
+  font-weight: 700;
+  font-size: 1em;
+  color: white;
+  border-radius: 6px 6px 0 0;
+}
+
+.tier-header img {
+  width: 28px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.player-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  user-select:none;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  background-color: #263244;
+}
+.player-card:hover {
+  background-color: #3e4f68;
+}
+.player-card img.profile {
+  border-radius: 25%;
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+}
+
+.arrow {
+  width: 30px;
+  height: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  vertical-align: middle; /* Helps vertical alignment */
+}
+.arrow.up {
+  filter: hue-rotate(340deg);
+  margin-left: 0; /* Remove left margin for better alignment */
+}
+.arrow.down {
+  filter: hue-rotate(340deg);
+  margin-left: 0; /* Remove left margin for better alignment */
+}
+
+.player-card.ht-tier:hover .arrow.up {
+  filter: hue-rotate(340deg) brightness(1.5);
+}
+
+.player-card.lt-tier:hover .arrow.down {
+  filter: hue-rotate(340deg) brightness(1.5);
+}
+
+tr.clickable-row {
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none !important;
+  user-select: none;
+  background-color: transparent;
+  position: relative;
+}
+tr.clickable-row:hover {
+  background-color: #1e2939;
+  transform: translateX(-10px);
+}
+tr.clickable-row td {
+  border: none !important;
+  padding: 10px 12px;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  width: 100%;
+}
+table thead th,
+table tbody td {
+  border: none !important;
+  user-select:none;
+}
+
+.leaderboard-rank-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+  border-radius: 6px 0 0 6px;
+  color: white;
+  font-weight: 700;
+  min-width: 70px;
+  user-select: none;
+  position: relative;
+}
+
+.rank-color-1 { background-color: #efba3c; color: black; }
+.rank-color-2 { background-color: #879ea5; color: black; }
+.rank-color-3 { background-color: #b56329; color: black; }
+.rank-color-default { background-color: #444; }
+
+
+
+.leaderboard-rank-profile-container {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 2px solid #89f19c;
+  border-radius: 8px;
+  background: #1c2035;
+  padding: 4px 8px;
+}
+
+.leaderboard-rank-number{
+  font-weight:700;
+  min-width:20px;
+  display:inline-block;
+  text-align:center;
+
+  text-shadow:
+    -1px -1px 0 
+     1px -1px 0 
+    -1px  1px 0 
+     1px  1px 0 
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: box-shadow 0.3s ease;
+  border-radius: 0 8px 8px 0;
+  border-left: none;
+}
+.rank-1 {
+  animation: none !important;
+}
+.rank-2 {
+  animation: none !important;
+}
+.rank-3 {
+  animation: none !important;
+}
+.rank-default {
+  animation: none !important;
+}
+
+.region-flag {
+  width: 90px;
+  text-align: center;
+  user-select: none;
+  font-weight: 600;
+  font-size: 0.9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 90px;
+}
+
+.region-flag img {
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+  user-select: none;
+  border-radius: 6px;
+}
+
+.tier-container {
+  display: flex;
+  gap: 4px;
+  max-width: 100%;
+  overflow-x: auto; /* scroll if needed */
+  justify-content: flex-start;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+
+.tier-slot-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; /* forces tier icons to line up */
+  margin-bottom: 4px;
+  height: 60px; /* fixed slot height so everything aligns */
+}
+.tier-slot-wrapper img.slot-image {
+  width: 40px;
+  height: auto;
+  margin-bottom: 0;
+  user-select: none;
+}
+
+.tier-slot-wrapper img.tier-image {
+  max-width: 30px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+
+#search-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #121822;
+  border-radius: 10px;
+  width: 420px;
+  max-width: 90%;
+  z-index: 1002;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: none;
+  user-select:none;
+}
+#search-popup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 22px;
+  background: none;
+  border: none;
+  color: #aaa;
+}
+#search-popup .close-btn:hover {
+  color: white;
+}
+#search-popup .player-info {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.player-profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.rank-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: black;
+  font-weight: 700;
+  font-size: 1.2em;
+  justify-content: center;
+  user-select: none;
+  z-index: 10;
+}
+.rank-box-Combat-Cyrus { background-color: #7a773f; color: black; } 
+.rank-box-Combat-Z4CK { background-color: #516889; color: black; } 
+.rank-box-Combat-Wesly { background-color: #967651; color: black; } 
+.rank-box-Combat-Vin { background-color: #759f9f; } 
+.rank-box-Combat-Maverick { background-color: #bc7442; } 
+.rank-box-Combat-Willow { background-color: #806687; } 
+.rank-box-Combat-Ruth { background-color: #b79b9b; } 
+.rank-box-Unranked { background-color: #444; }
+
+.popup-rank-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 1.1em;
+  justify-content: center;
+  user-select:none;
+}
+.popup-rank-row img {
+  width: 48px;
+  height: 48px;
+}
+
+.position-overall-streak {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background: #1e2333;
+  border-radius: 6px;
+  padding: 8px 15px;
+  gap: 12px;
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 1.1em;
+  user-select: none;
+  white-space: nowrap;
+  position: relative;
+}
+
+.position-label {
+  position: absolute;
+  top: -28px;
+  font-size: 0.8em;
+  font-weight: 700;
+  user-select: none;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #99a1af;
+}
+
+.position-overall-streak > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  min-width: 40px;
+  background: none;
+  border: none;
+}
+
+.position-overall-streak div.rank-number {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+.position-overall-streak div.overall-text,
+.position-overall-streak div.points-text {
+  font-weight: 700;
+  font-size: 1.05em;
+  white-space: nowrap;
+  user-select:none;
+  align-items: center;
+  flex-direction: row;
+}
+
+.popup-tiers-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  user-select:none;
+}
+
+.popup-tiers-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  user-select:none;
+}
+
+.popup-tiers-row {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.tier-slot-wrapper-popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.tier-slot-wrapper-popup img.slot-image {
+  width: 38px;
+  height: 24px;
+  margin-bottom: 4px;
+  user-select: none;
+}
+
+.tier-slot-wrapper-popup img.tier-image {
+  width: 32px;
+  height: 24px;
+  object-fit: contain;
+  user-select:none;
+  border-radius: 25px;
+}
+
+.tier-slot-wrapper-popup img.tier-image[title] {
+  cursor: default;
+}
+
+/* Tooltip */
+.tier-tooltip {
+  position: absolute;
+  background: #121822;
+  color: #fff;
+  padding: 6px 10px; /* snug fit */
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9em;
+  text-align: center;
+  white-space: normal;
+  width: auto; /* fit text width */
+  max-width: 140px;
+  line-height: 1.3em;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.08s ease;
+  border: 1px solid #18202a;
+  user-select: none;
+  word-wrap: break-word;
+}
+.tier-tooltip.visible {
+  opacity: 1;
+}
+
+/* Tier name on top line */
+.tier-tooltip .tier-name,
+.tier-tooltip .tier-retired {
+  font-weight: 700;
+  font-size: 1.1em;
+  display: block;
+  margin-bottom: 2px;
+  color: #fff;
+}
+
+/* Points text second line, smaller and lighter, lowercase points */
+.tier-tooltip .tier-points {
+  font-weight: normal;
+  font-size: 0.85em;
+  color: #99a1ad;
+  display: block;
+  text-transform: lowercase;
+}
+
+/* New: player profile tooltip box */
+#player-profile-tooltip {
+  position: absolute;
+  background: #121822;
+  color: white;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.2em;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+  width: auto;
+  text-align: center;
+  white-space: nowrap;
+  display: none;
+  border: 2px solid #18202a;
+}
+
+/* Leaderboard rank name and points styling */
+.rank-name {
+  font-size: 0.9em;
+  color: #90a1b9;
+  font-weight: normal;
+}
+.rank-points {
+  font-size: 0.9em;
+  color: #45556c;
+  font-weight: normal;   /* UNBOLD */
+  margin-left: 6px;
+}
+
+.rank-points {
+  color: #45556c !important; /* Set your desired color, e.g., a light blue */
+  font-weight: normal; /* ensure unbolded */
+}
+
+.rank-profile-relative {
+  position: relative;
+}
+
+/* Crown directly above profile image */
+.trown-overlay {
+  position: absolute;
+  top: 0px;                 /* inside yellow box, touching avatar */
+  right: 53px;               /* aligns over profile image */
+  width: 0px;
+  height: auto;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#player-profile-tooltip .top-text {
+  font-weight: 700;       /* keep tier name bold */
+  color: white;
+}
+
+#player-profile-tooltip .bottom-text {
+  font-weight: normal;    /* UNBOLD points */
+  color: #99a1ad;         /* DIFFERENT color (gold/orange) */
+  font-size: 0.9em;
+}
+
+.tier-container {
+  display: flex;
+  gap: 4px;
+  max-width: 100%;
+  overflow-x: auto; /* scroll if needed */
+  justify-content: flex-start;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+
+.region-header,
+.region-flag{
+  transform: translateX(40px);
+}
+
+#leaderboard-container table th:nth-child(3),
+#leaderboard-container table td:nth-child(3){
+  transform: translateX(40px);
+}
+
+.player-column {
+  width: 280px;
+}
+
+.rank-text-block{
+  display:flex;
+  flex-direction:column;
+  line-height:1.1;
+}
+
+.rank-name{
+  font-weight:600;
+}
+
+.rank-points{
+  font-size:0.9em;
+  color:#aaa;
+}
+
+.rank-row{
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
+#leaderboard-container td.region-column,
+#leaderboard-container th.region-column {
+  width: auto;   /* allow flexible width */
+  max-width: 50px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* Expand player column */
+#leaderboard-container td:nth-child(2),
+#leaderboard-container th:nth-child(2) {
+  width: auto; /* let it take remaining space */
+  min-width: 170px; /* ensures it’s wider than before */
+}
+
+/* Keep tiers flexible */
+#leaderboard-container td:nth-child(4),
+#leaderboard-container th:nth-child(4) {
+  width: auto;
+  overflow-x: auto;
+}
+
+#player-not-found-box {
+  position: fixed;
+  top: -100px; /* start above the screen */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4b0508;
+  border: 2px solid #2d0607;
+  border-radius: 10px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 2000;
+  min-width: 300px;
+  max-width: 400px;
+  color: #ff9ea1;
+  font-size: 1em;
+  text-align: center;
+  transition: top 1s ease; /* animation for slide down/up */
+}
+
+#player-not-found-box img {
+  width: 40px;   /* or your desired width */
+  height: auto;
+}
+
+#player-not-found-box .texts {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2em;
+}
+
+#player-not-found-box .texts span {
+  display: block;
+}
+
+#player-not-found-box .close-x {
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #f66;
+  font-size: 1.2em;
+}
+
+
+
+
+#player-not-found-box{
+  position: fixed;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2d0607;
+  color: #ff9ea1;
+  border: 3px solid #4b0508;
+  padding: 14px 22px;
+  border-radius: 8px;
+  z-index: 9999;
+
+  display: none;
+}
+
+.pnf-header{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.pnf-text{
+  font-size: 18px;
+}
+
+#pnf-subtext{
+  font-size: 18px;
+  margin: 0;
+}
+
+#player-not-found-close{
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  background: none;
+  border: none;
+  color: #ff9ea1;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#pnf-title{
+  font-weight: bold;
+}
+
+.texts{
+  display:flex;
+  flex-direction:column;
+  line-height:1;
+  gap:0;
+}
+
+.title{
+  font-weight:bold;
+  margin:0;
+  padding:0;
+}
+
+.subtitle{
+  margin:0;
+  padding:0;
+}
+
+.tier-image {
+    border-radius: 8px; /* fully rounded */
+    object-fit: cover;
+}
+
+#player-not-found-box .title {
+  color: #ff9ea1; /* Example: red color */
+}
+
+#player-not-found-box .region-flag {
+  display: none !important;
+}
+
+#disclaimer-box.showing {
+  background-color: #121822 !important;
+  border-color: #18202a !important;
+}
+
+.discord-button:hover {
+  background-color: #1c2634;
+}
+
+#search-input {
+  color: #99a1af; /* typing text */
+  /* The input text color */
+}
+
+/* Since you mention "Search Player Button text: #59626e" but there's no search button in the HTML, assume you mean placeholder text color */
+#search-input::placeholder {
+  color: #59626e; /* placeholder text */
+}
+
+/* Tier Tabs text */
+#tabs-container .tab div {
+  color: #474d57;
+}
+
+/* Leaderboard header text */
+#leaderboard-container table thead th {
+  color: #2c3648;
+}
+
+/* Leaderboard player name text */
+#leaderboard-container .player-name {
+  color: #cad5e2;
+}
+
+/* Information Button and disclaimer button text */
+#info-button,
+#discord-button {
+  color: #f9fafb;
+}
+
+/* Tiertab box player name text */
+.tier-box .player-info div {
+  color: #f9fafb;
+}
+
+.tier-box:nth-child(1) > .tier-header {
+  color: #f0b857; /* gold */
+}
+
+/* Tier 2 header text color */
+.tier-box:nth-child(2) > .tier-header {
+  color: #a9b1b9; /* bluish gray */
+}
+
+/* Tier 3 header text color */
+.tier-box:nth-child(3) > .tier-header {
+  color: #d59161; /* orange-brown */
+}
+
+/* Tiertab box tier 4 text */
+.tier-box:nth-child(4) .tier-header {
+  color: #b1c0cc;
+}
+
+/* Tiertab box tier 5 text */
+.tier-box:nth-child(5) .tier-header {
+  color: #b1c0cc;
+}
+
+/* Search-popup box player name */
+#search-popup .player-profile-container > div:nth-child(2) {
+  color: #cad5e2;
+}
+
+/* Search-popup box region text */
+#search-popup .player-profile-container > div:nth-child(4) {
+  color: #222a38;
+}
+
+/* Search-popup box POSITION and TIERS text */
+.position-label,
+.popup-tiers-header {
+  color: #98a0ae;
+}
+
+/* Search-popup box (number points) text */
+.points-text,
+.rank-points {
+  color: #90a1b9;
+}
+
+#search-popup .player-profile-container > div:nth-child(4) {
+  font-size: 1em !important;
+  font-weight: 700 !important;
+  color: #222a38 !important; /* keep existing color */
+}
+
+#leaderboard-container {
+  width: 100%;
+  overflow-x: auto;  /* allow scrolling if unavoidable */
+}
+
+#leaderboard-container table {
+  width: 100%;
+  min-width: auto; /* allow shrinking */
+  table-layout: auto; /* let the table adjust columns */
+}
+
+#leaderboard-container .player-column {
+  min-width: 110px;   /* smaller min width for smaller screens */
+  max-width: 30vw;    /* use viewport width for responsiveness */
+  white-space: normal; /* allow wrapping */
+  word-break: break-word;
+}
+
+@media (max-width: 600px) {
+  #leaderboard-container table td,
+  #leaderboard-container table th {
+    font-size: 0.85em; /* smaller font on small screens */
+    padding: 6px 8px;
+  }
+  
+  .tab {
+    width: 60px;  /* smaller tabs */
+    font-size: 0.8em;
+    padding: 6px 8px;
+  }
+}
+
+.player-card.ht-tier {
+  background-color: #263244; /* example: greenish background */
+}
+
+.player-card.ht-tier:hover {
+  background-color: #3e4f68; /* lighter green hover */
+}
+
+.player-card.lt-tier {
+  background-color: #161e2a; /* example: purplish background */
+}
+
+.player-card.lt-tier:hover {
+  background-color: #263242; /* lighter purple hover */
+}

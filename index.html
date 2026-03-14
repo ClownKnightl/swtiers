@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SW3TIERS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="top-bar" class="top-bar streak-box-topbar">
+    <img id="logo" src="SW3T.png" alt="Logo" />
+    <div id="search-container">
+      <input id="search-input" type="text" placeholder="Search Player" autocomplete="off" />
+    </div>
+  </div>
+
+  <h1 class="title"></h1>
+
+  <div id="tabs-container" class="tabs-streak-box"></div>
+
+  <div id="middle-right-buttons">
+  <!-- Info Button -->
+  <button id="info-button" class="info-button" title="Information">
+  <img src="inf.png" alt="Info" /> <!-- Changed to inf.png -->
+  Info
+</button>
+  
+  <div id="info-popup" class="info-popup" style="display:none;">
+    <button id="titles-btn" class="info-tab active">Titles</button>
+    <button id="points-btn" class="info-tab">Points</button>
+    <div id="info-content" class="info-content"></div>
+  </div>
+
+  <!-- Extra Icon -->
+  <img id="extra-img" src="knightll.png" alt="Extra" class="extra-icon" /> <!-- Changed from extra-icon.png -->
+
+  <!-- Discord Button -->
+  <button id="discord-button" class="discord-button" title="Join Discord">Join Discord</button>
+</div>
+
+  <div id="tier-boxes-container"></div>
+
+  <div id="leaderboard-wrapper" class="streak-box-leaderboard" style="padding-left: 30px; max-width: 1150px;">
+    <div id="leaderboard-container">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:40px; text-align: center;">#</th>
+            <th style="min-width: 150px;">Player</th>
+            <th style="width: 90px;" class="region-header region-column">Region</th>
+            <th style="min-width: 800px;" class="tiers-header">Tiers</th>
+          </tr>
+        </thead>
+        <tbody id="leaderboard-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Overlay and Player Profile Popup -->
+  <div id="overlay" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:1000;"></div>
+  <div id="search-popup" style="display:none;">
+    <button class="close-btn" aria-label="Close">&times;</button>
+    <div class="player-info"></div>
+    <div class="tier-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+  
+  <div id="player-not-found-box">
+  <span class="close-x">&times;</span>
+
+  <img src="Excla.png" alt="Icon">
+
+  <div class="texts">
+    <div class="title">Player Not Found</div>
+    <div class="subtitle">Unable to find player by the name <span id="pnf-name"></span></div>
+  </div>
+<div class="region-flag">
+  <img src="iNA.png">
+</div>
+
+
+</div>
+</div>
+  
+</body>
+</html>
