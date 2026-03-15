@@ -30,6 +30,7 @@ const regionImages = {
 const playerImages = {
   "Giantking": "Giantking.png",
   "Narri": "Narri.png",
+  "jerry": "Jerry.png",
 };
 
 const players = [
@@ -42,6 +43,11 @@ const players = [
     name: "Narri",
     region: "EU",
     tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked"],
+  },
+  {
+    name: "jerry",
+    region: "AS",
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   }
 ];
 
