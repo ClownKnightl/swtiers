@@ -39,9 +39,9 @@ const players = [
     tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
-    name: "Bob",
+    name: "Narri",
     region: "EU",
-    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked"],
   }
 ];
 
