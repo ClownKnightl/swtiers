@@ -28,9 +28,8 @@ const regionImages = {
 };
 
 const playerImages = {
-  "Alice": "alice.png",
   "Bob": "bob.png",
-  "Charlie": "charlie.png",
+  "Giantking": "Giantking.png",
   "Giles": "Giles.png",
   "Nufli": "",
   "Gemi": "Gemi.png",
@@ -39,39 +38,14 @@ const playerImages = {
 
 const players = [
   {
-    name: "Alice",
-    region: "NA",
-    tiers: ["LT3", "LT2", "LT2", "LT3", "LT4", "HT3", "LT3", "LT3", "HT3", "LT3", "HT3", "HT3", "LT3", "HT3"],
+    name: "Giantking",
+    region: "EU",
+    tiers: ["", "", "", "", "", "", "", "", "", "LT5", "", "", "", ""],
   },
   {
     name: "Bob",
     region: "EU",
-    tiers: ["HT1", "LT2", "LT2", "LT1", "HT2", "LT3", "LT2R", "HT2", "HT2", "LT2", "HT2", "LT3", "LT2", "LT2"],
-  },
-  {
-    name: "Charlie",
-    region: "AS",
-    tiers: ["LT2", "HT2", "HT2", "LT2", "LT2", "LT2", "HT2", "LT2", "LT3", "LT3", "HT3", "LT3", "LT3", "LT2"],
-  },
-  {
-    name: "Giles",
-    region: "AS",
-    tiers: ["LT5", "HT3", "HT3", "LT4", "LT3", "LT5", "HT5", "HT4", "HT4", "LT5", "HT4", "LT3", "HT4", "LT5"],
-  },
-  {
-    name: "Nufli",
-    region: "AS",
-    tiers: ["LT4", "Unranked", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5"],
-  },
-  {
-    name: "Gemi",
-    region: "AS",
-    tiers: ["LT4", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5"],
-  },
-  {
-    name: "GEli",
-    region: "AS",
-    tiers: ["LT5", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5", "LT5"],
+    tiers: ["", "", "", "", "", "", "", "", "", "", "", "", "", ""],
   }
 ];
 
