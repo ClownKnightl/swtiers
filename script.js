@@ -29,7 +29,7 @@ const regionImages = {
 
 const playerImages = {
   "Giantking": "Giantking.png",
-  "Bob": "bob.png",
+  "Narri": "Narri.png",
 };
 
 const players = [
