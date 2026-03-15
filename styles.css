@@ -1188,3 +1188,13 @@ table tbody td {
 .player-card.lt-tier:hover {
   background-color: #263242; /* lighter purple hover */
 }
+
+@media (max-width: 600px) {
+  #app-wrapper {
+    width: 100vw;         /* full viewport width */
+    height: calc(100vw * 9 / 16);  /* force 16:9 height */
+    max-height: none;      /* remove limits */
+    max-width: none;
+    overflow: hidden;      /* prevent scroll */
+  }
+}
