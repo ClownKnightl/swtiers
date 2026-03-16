@@ -33,6 +33,7 @@ const playerImages = {
   "jerry": "Jerry.png",
   "epic": "Order.png",
   "prompt": "prompt.png"
+  "Dragonflypc": "Dragonflypc.png"
 };
 
 const players = [
@@ -60,6 +61,11 @@ const players = [
     name: "prompt",
     region: "NA",
     tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "LT5"],
+  },
+  {
+    name: "Dragonflypc",
+    region: "AS",
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "HT5", "Unranked", "Unranked", "Unranked", "Unranked"],
   }
 ];
 
