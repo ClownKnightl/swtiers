@@ -32,7 +32,7 @@ const playerImages = {
   "Narri": "Narri.png",
   "jerry": "Jerry.png",
   "epic": "Order.png",
-  "prompt": "prompt.png"
+  "prompt": "prompt.png",
   "Dragonflypc": "Dragonflypc.png"
 };
 
