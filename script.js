@@ -33,7 +33,7 @@ const playerImages = {
   "jerry": "Jerry.png",
   "epic": "Order.png",
   "prompt": "prompt.png",
-  "Dragonflypc": "Dragonflypc.png"
+  "Dragonflypc": "Dragonflypc.png",
   "Taha": "default-tierr.png"
 };
 
