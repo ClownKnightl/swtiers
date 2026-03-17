@@ -34,6 +34,7 @@ const playerImages = {
   "epic": "Order.png",
   "prompt": "prompt.png",
   "Dragonflypc": "Dragonflypc.png"
+  "Taha": "default-tierr.png"
 };
 
 const players = [
@@ -66,6 +67,11 @@ const players = [
     name: "Dragonflypc",
     region: "AS",
     tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "HT5", "Unranked", "Unranked", "Unranked", "Unranked"],
+  },
+  {
+    name: "Taha",
+    region: "AS",
+    tiers: ["Unranked", "HT5", "Unranked", "HT5", "LT5", "Unranked", "Unranked", "Unranked", "LT5", "Undranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   }
 ];
 
