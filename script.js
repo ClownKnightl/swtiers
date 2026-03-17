@@ -36,6 +36,7 @@ const playerImages = {
   "Dragonflypc": "Dragonflypc.png",
   "Taha": "VaultAhPlayer.png",
   "ĐeustchΩLųkerufex": "Shade.png"
+  "TheCrawlerPrince": "TheCrawlerPrince.png"
 };
 
 const players = [
@@ -78,6 +79,11 @@ const players = [
     name: "ĐeustchΩLųkerufex",
     region: "SA",
     tiers: ["LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+  },
+  {
+    name: "TheCrawlerPrince",
+    region: "NA",
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "HT5", "Unranked", "Unranked", "Unranked"],
   }
 ];
 
