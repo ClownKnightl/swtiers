@@ -58,7 +58,7 @@ const players = [
   {
     name: "epic",
     region: "EU",
-    tiers: ["Unranked", "LT5", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "HT5", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "LT5", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "LT4", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "prompt",
