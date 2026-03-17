@@ -71,7 +71,7 @@ const players = [
   {
     name: "Taha",
     region: "AS",
-    tiers: ["Unranked", "HT5", "Unranked", "HT5", "LT5", "Unranked", "Unranked", "Unranked", "LT5", "Undranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "HT5", "Unranked", "LT5", "LT5", "Unranked", "Unranked", "Unranked", "LT5", "Undranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   }
 ];
 
