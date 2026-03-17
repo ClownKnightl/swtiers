@@ -34,7 +34,8 @@ const playerImages = {
   "epic": "Order.png",
   "prompt": "prompt.png",
   "Dragonflypc": "Dragonflypc.png",
-  "Taha": "VaultAhPlayer.png"
+  "Taha": "VaultAhPlayer.png",
+  "ĐeustchΩLųkerufex": "Shade.png"
 };
 
 const players = [
@@ -72,6 +73,11 @@ const players = [
     name: "Taha",
     region: "AS",
     tiers: ["Unranked", "HT5", "Unranked", "LT5", "LT5", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked"],
+  },
+  {
+    name: "ĐeustchΩLųkerufex",
+    region: "SA",
+    tiers: ["LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   }
 ];
 
