@@ -34,7 +34,7 @@ const playerImages = {
   "epic": "Order.png",
   "prompt": "prompt.png",
   "Dragonflypc": "Dragonflypc.png",
-  "Taha": "Def.png"
+  "Taha": "VaultAhPlayer.png"
 };
 
 const players = [
