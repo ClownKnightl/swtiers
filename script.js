@@ -149,7 +149,6 @@ const tierTabImages = [
   "tierr8.png",          // Crawlerjug
   "tierr9.png",          // Spearcher
   "tierr10.png",         // Sicklejug
-  "tierr13.png",         // ShadowripVP (note 12 was removed)
   "tierr14.png",         // Bomber
   "tierr15.png",         // MagiWall
   "tierr17.png"          // A&F
@@ -157,7 +156,7 @@ const tierTabImages = [
 
 const tierTabNames = [
   "Overall", "ShadowjugVP", "Spearsor", "Giant", "Merichu", "ArcherWall", "Gspam",
-  "ShadowripVL", "Crawlerjug", "Spearcher", "Sicklejug", "ShadowripVP",
+  "ShadowripVL", "Crawlerjug", "Spearcher", "Sicklejug",
   "Bomber", "MagiWall", "A&F"
 ];
 
@@ -175,7 +174,6 @@ const tierSlotHeights = {
   11: 20,
   12: 20,
   13: 20,
-  14: 20
 };
 
 const tierSlotImageHeights = {
@@ -209,16 +207,13 @@ const tierSlotImageHeights = {
   10: 23,
   //Sicklejug
   
-  11: 19,
-  //ShadowripVP
-  
-  12: 42,
+  11: 42,
   //Bomber
   
-  13: 20,
+  12: 22,
   //MagiWall
   
-  14: 15
+  13: 15,
   //A&F
 };
 
@@ -290,7 +285,7 @@ function renderLeaderboard(){
     const rankClass = player.rankNumber <= 3 ? `rank-${player.rankNumber}` : "rank-default";
     const bgColor = rankBackgroundColors[player.rankNumber] || "#1d2735";
     
-    const tierHTML = player.tiers.map((tier, i) => {
+    const tierHTML = player.tiers.slice(0, 13).map((tier, i) => {
   const wrapper = document.createElement('div');
   wrapper.className = 'tier-slot-wrapper';
 
@@ -556,7 +551,7 @@ rankBox.appendChild(rankNameEl);
   container.appendChild(rankBox);
 
   const regionNameEl = document.createElement("div");
-  regionNameEl.style.color = "#222a38";  // Changed color here
+  regionNameEl.style.color = "#89f19c";  // Changed color here
   regionNameEl.style.fontWeight = "600";
   regionNameEl.style.fontSize = "0.9em";
   regionNameEl.style.userSelect = "none";
@@ -617,7 +612,7 @@ posImg.style.height = "28px"; // keep consistent height
   tiersRowsContainer.className = "popup-tiers-rows";
 
   const topTiers = player.tiers.slice(0, 10);
-  const bottomTiers = player.tiers.slice(10);
+  const bottomTiers = player.tiers.slice(10, 13);
 
   // Remove old tooltip if exists:
   let oldTooltip = document.getElementById("player-profile-tooltip");
