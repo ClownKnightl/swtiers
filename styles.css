@@ -1175,3 +1175,24 @@ table tbody td {
 .player-card.lt-tier:hover {
   background-color: #263242; /* lighter purple hover */
 }
+
+.player-card .player-info {
+  flex-grow: 1;
+  min-width: 0; /* necessary for text-overflow to work inside flex */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.player-card .player-info > div {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.player-name-truncated {
+  max-width: 59px;   /* or adjust to fit your layout */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
