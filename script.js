@@ -41,37 +41,37 @@ const players = [
   {
     name: "Giantking",
     region: "EU",
-    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "Narri",
     region: "EU",
-    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "jerry",
     region: "AS",
-    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "epic",
     region: "EU",
-    tiers: ["Unranked", "LT5", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "HT5", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "LT5", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "HT5", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "prompt",
     region: "NA",
-    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "LT5"],
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "LT5"],
   },
   {
     name: "Dragonflypc",
     region: "AS",
-    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "HT5", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "HT5", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "Taha",
     region: "AS",
-    tiers: ["Unranked", "HT5", "Unranked", "LT5", "LT5", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "HT5", "Unranked", "LT5", "LT5", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked"],
   }
 ];
 
