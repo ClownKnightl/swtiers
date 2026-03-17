@@ -440,7 +440,7 @@ box.innerHTML += `
   <div class="player-card ${tierPrefix}" title="${p.name} - ${p.tierCode}" data-player-name="${p.name}" style="justify-content: space-between;">
     <div style="display:flex; align-items:center; gap:8px;">
       <img class="profile" src="${p.profile}" alt="${p.name}" onerror="this.onerror=null;this.src='${DEFAULT_PROFILE}'"/>
-      <div class="player-info"><div>${p.name}</div></div>
+      <div class="player-info" title="${p.name}"><div class="player-name-truncated">${p.name}</div></div>
     </div>
     ${arrowHtml}
   </div>`;
