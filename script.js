@@ -35,7 +35,7 @@ const playerImages = {
   "prompt": "prompt.png",
   "Dragonflypc": "Dragonflypc.png",
   "Taha": "VaultAhPlayer.png",
-  "ĐeustchΩLųkerufex": "Shade.png"
+  "ĐeustchΩLųkerufex": "Shade.png",
   "TheCrawlerPrince": "TheCrawlerPrince.png"
 };
 
