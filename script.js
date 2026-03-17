@@ -222,12 +222,12 @@ function calculatePoints(tiers){
 }
 
 function getRank(points){
-  if(points >= 180) return "Combat Cyrus";
-  if(points >= 130) return "Combat Z4CK";
-  if(points >= 75) return "Combat Wesly";
-  if(points >= 40) return "Combat Vin";
-  if(points >= 25) return "Combat Maverick";
-  if(points >= 16) return "Combat Willow";
+  if(points >= 135) return "Combat Cyrus";
+  if(points >= 100) return "Combat Z4CK";
+  if(points >= 55) return "Combat Wesly";
+  if(points >= 30) return "Combat Vin";
+  if(points >= 17) return "Combat Maverick";
+  if(points >= 12) return "Combat Willow";
   if(points >= 1) return "Combat Ruth";
   return "Unranked";
 }
@@ -906,12 +906,12 @@ window.addEventListener("resize", () => { if(disclaimerBox.style.display === "bl
 window.addEventListener("scroll", () => { if(disclaimerBox.style.display === "block") positionDisclaimerBox(); });
 
 const ranksWithPoints = [
-  {name: "Combat Cyrus", points: 180},
-  {name: "Combat Z4CK", points: 130},
-  {name: "Combat Wesly", points: 75},
-  {name: "Combat Vin", points: 40},
-  {name: "Combat Maverick", points: 25},
-  {name: "Combat Willow", points: 16},
+  {name: "Combat Cyrus", points: 135},
+  {name: "Combat Z4CK", points: 100},
+  {name: "Combat Wesly", points: 55},
+  {name: "Combat Vin", points: 30},
+  {name: "Combat Maverick", points: 17},
+  {name: "Combat Willow", points: 12},
   {name: "Combat Ruth", points: 1}
 ];
 
