@@ -37,7 +37,8 @@ const playerImages = {
   "Taha": "VaultAhPlayer.png",
   "ĐeustchΩLųkerufex": "Shade.png",
   "TheCrawlerPrince": "TheCrawlerPrince.png",
-  "mouse": "Juggerknight.png"
+  "mouse": "Juggerknight.png",
+  "MasterTahaIsTheBEST": "Order.png"
 };
 
 const players = [
@@ -88,8 +89,13 @@ const players = [
   },
   {
     name: "mouse",
-    region: "NA",
+    region: "AS",
     tiers: ["Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+  },
+  {
+    name: "MasterTahaIsTheBEST",
+    region: "NA",
+    tiers: ["Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   }
 ];
 
