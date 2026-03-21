@@ -40,7 +40,8 @@ const playerImages = {
   "mouse": "Juggerknight.png",
   "MasterTahaIsTheBEST": "Order.png",
   "NICETRY": "NICETRY.png",
-  "Ooofffmain": "Ooofffmain.png"
+  "Ooofffmain": "Ooofffmain.png",
+  "Larry": "Wrathnar.png"
 };
 
 const players = [
@@ -62,7 +63,7 @@ const players = [
   {
     name: "epic",
     region: "EU",
-    tiers: ["Unranked", "LT5", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "LT4", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "LT5", "Unranked", "HT5", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "LT4", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "prompt",
@@ -77,12 +78,12 @@ const players = [
   {
     name: "Taha",
     region: "AS",
-    tiers: ["Unranked", "HT5", "Unranked", "LT5", "HT5", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "HT5", "Unranked", "HT5", "HT5", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "ĐeustchΩLųkerufex",
     region: "SA",
-    tiers: ["LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["HT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "TheCrawlerPrince",
@@ -92,7 +93,7 @@ const players = [
   {
     name: "mouse",
     region: "AS",
-    tiers: ["Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "HT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "MasterTahaIsTheBEST",
@@ -108,6 +109,11 @@ const players = [
     name: "Ooofffmain",
     region: "EU",
     tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+  },
+  {
+    name: "Larry",
+    region: "NA",
+    tiers: ["LT5", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   }
 ];
 
