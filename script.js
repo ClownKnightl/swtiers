@@ -1,11 +1,11 @@
 const tierPoints = {
-  "HT1": 30, "LT1": 22,
-  "HT2": 15, "LT2": 10,
-  "HT3": 6,  "LT3": 5,
+  "HT1": 40, "LT1": 30,
+  "HT2": 20, "LT2": 15,
+  "HT3": 10,  "LT3": 6,
   "HT4": 4,  "LT4": 3,
   "HT5": 2,  "LT5": 1,
-  "HT1R": 30,  "LT1R": 22,
-  "HT2R": 15,  "LT2R": 10,
+  "HT1R": 40,  "LT1R": 30,
+  "HT2R": 20,  "LT2R": 15,
   "Unranked": 0
 };
 
@@ -142,20 +142,20 @@ const rankNameColors = {
 const GOLD_RANK_IMG = "Gol.png";
 
 const tierInfo = {
-  HT1: { name: "HT1", points: 30, image: "HT1__.png" },
-  HT2: { name: "HT2", points: 15, image: "HT2__.png" },
-  HT3: { name: "HT3", points: 6, image: "HT3__.png" },
+  HT1: { name: "HT1", points: 40, image: "HT1__.png" },
+  HT2: { name: "HT2", points: 20, image: "HT2__.png" },
+  HT3: { name: "HT3", points: 10, image: "HT3__.png" },
   HT4: { name: "HT4", points: 4, image: "HT4__.png" },
   HT5: { name: "HT5", points: 2, image: "HT5__.png" },
-  LT1: { name: "LT1", points: 22, image: "LT1__.png" },
-  LT2: { name: "LT2", points: 10, image: "LT2__.png" },
-  LT3: { name: "LT3", points: 5, image: "LT3__.png" },
+  LT1: { name: "LT1", points: 30, image: "LT1__.png" },
+  LT2: { name: "LT2", points: 15, image: "LT2__.png" },
+  LT3: { name: "LT3", points: 6, image: "LT3__.png" },
   LT4: { name: "LT4", points: 3, image: "LT4__.png" },
   LT5: { name: "LT5", points: 1, image: "LT5__.png" },
-  HT1R: { name: "HT1 (Retired)", points: 30, image: "rHT1__.png" },
-  HT2R: { name: "HT2 (Retired)", points: 15, image: "rHT2__.png" },
-  LT1R: { name: "LT1 (Retired)", points: 22, image: "rLT1__.png" },
-  LT2R: { name: "LT2 (Retired)", points: 10, image: "rLT2__.png" },
+  HT1R: { name: "HT1 (Retired)", points: 40, image: "rHT1__.png" },
+  HT2R: { name: "HT2 (Retired)", points: 20, image: "rHT2__.png" },
+  LT1R: { name: "LT1 (Retired)", points: 30, image: "rLT1__.png" },
+  LT2R: { name: "LT2 (Retired)", points: 15, image: "rLT2__.png" },
 };
 
 const ARROW_UP = "Upup.png";
@@ -958,12 +958,12 @@ const ranksWithPoints = [
 ];
 
 const tiersList = [
-  {code: "HT1", points: 30, tierImg: tierInfo.HT1.image},
-  {code: "LT1", points: 22, tierImg: tierInfo.LT1.image},
-  {code: "HT2", points: 15, tierImg: tierInfo.HT2.image},
-  {code: "LT2", points: 10, tierImg: tierInfo.LT2.image},
-  {code: "HT3", points: 6,  tierImg: tierInfo.HT3.image},
-  {code: "LT3", points: 5,  tierImg: tierInfo.LT3.image},
+  {code: "HT1", points: 40, tierImg: tierInfo.HT1.image},
+  {code: "LT1", points: 30, tierImg: tierInfo.LT1.image},
+  {code: "HT2", points: 20, tierImg: tierInfo.HT2.image},
+  {code: "LT2", points: 15, tierImg: tierInfo.LT2.image},
+  {code: "HT3", points: 10, tierImg: tierInfo.HT3.image},
+  {code: "LT3", points: 6,  tierImg: tierInfo.LT3.image},
   {code: "HT4", points: 4,  tierImg: tierInfo.HT4.image},
   {code: "LT4", points: 3,  tierImg: tierInfo.LT4.image},
   {code: "HT5", points: 2,  tierImg: tierInfo.HT5.image},
