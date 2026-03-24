@@ -41,7 +41,8 @@ const playerImages = {
   "MasterTahaIsTheBEST": "Order.png",
   "NICETRY": "NICETRY.png",
   "Ooofffmain": "Ooofffmain.png",
-  "Larry": "Wrathnar.png"
+  "Larry": "Wrathnar.png",
+  "EXX": "EXX.png"
 };
 
 const players = [
@@ -114,6 +115,11 @@ const players = [
     name: "Larry",
     region: "NA",
     tiers: ["LT5", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+  },
+  {
+    name: "EXX",
+    region: "NA",
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "HT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   }
 ];
 
