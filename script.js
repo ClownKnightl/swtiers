@@ -42,7 +42,8 @@ const playerImages = {
   "NICETRY": "NICETRY.png",
   "Ooofffmain": "Ooofffmain.png",
   "Larry": "Wrathnar.png",
-  "EXX": "EXX.png"
+  "EXX": "EXX.png",
+  "Untastic": "Untasic.png"
 };
 
 const players = [
@@ -89,7 +90,7 @@ const players = [
   {
     name: "TheCrawlerPrince",
     region: "NA",
-    tiers: ["LT5", "Unranked", "LT5", "LT5", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "HT5", "Unranked", "LT5", "Unranked"],
+    tiers: ["LT5", "Unranked", "LT5", "LT5", "Unranked", "LT5", "Unranked", "LT5", "Unranked", "HT5", "Unranked", "LT5", "Unranked"],
   },
   {
     name: "mouse",
@@ -120,6 +121,11 @@ const players = [
     name: "EXX",
     region: "NA",
     tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+  },
+  {
+    name: "Untastic",
+    region: "EU",
+    tiers: ["Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   }
 ];
 
