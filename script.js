@@ -44,7 +44,7 @@ const playerImages = {
   "Larry": "Wrathnar.png",
   "EXX": "EXX.png",
   "Untastic": "Untastic.png",
-  "Competitive Stick War Saga": "Civilbreak.png"
+  "CompetitiveSWS": "Civilbreak.png"
 };
 
 const players = [
