@@ -43,7 +43,7 @@ const playerImages = {
   "Ooofffmain": "Ooofffmain.png",
   "Larry": "Wrathnar.png",
   "EXX": "EXX.png",
-  "Untastic": "Untasic.png"
+  "Untastic": "Untastic.png"
 };
 
 const players = [
