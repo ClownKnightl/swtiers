@@ -43,7 +43,8 @@ const playerImages = {
   "Ooofffmain": "Ooofffmain.png",
   "Larry": "Wrathnar.png",
   "EXX": "EXX.png",
-  "Untastic": "Untastic.png"
+  "Untastic": "Untastic.png",
+  "Competitive Stick War Saga": "Civilbreak.png"
 };
 
 const players = [
@@ -80,7 +81,7 @@ const players = [
   {
     name: "Taha",
     region: "AS",
-    tiers: ["Unranked", "LT4", "Unranked", "LT4", "HT5", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "HT5", "Unranked", "LT4", "HT5", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "ĐeustchΩLųkerufex",
