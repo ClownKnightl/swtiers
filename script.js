@@ -130,7 +130,7 @@ const players = [
   },
   {
     name: "Competitive Stick War Saga",
-    region: "US",
+    region: "NA",
     tiers: ["Unranked", "HT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   }
 ];
