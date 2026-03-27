@@ -199,13 +199,12 @@ const leaderboardTabImage = "Gol.png";
 // New: all new images for every tab
 const tierTabImages = [
   "Gol.png",           // Overall
-  "tierr1.png",          // ShadowjugVP
+  "tierr1.png",          // Shadowjug
   "tierr2.png",          // Spearsor
   "tierr3.png",          // Giant
   "tierr4.png",          // Merichu
   "tierr5.png",          // ArcherWall
   "tierr6.png",          // Gspam
-  "tierr7%20(1).png",    // ShadowripVL
   "tierr8.png",          // Crawlerjug
   "tierr9.png",          // Spearcher
   "tierr10.png",         // Sicklejug
@@ -215,8 +214,8 @@ const tierTabImages = [
 ];
 
 const tierTabNames = [
-  "Overall", "ShadowjugVP", "Spearsor", "Giant", "Merichu", "ArcherWall", "Gspam",
-  "ShadowripVL", "Crawlerjug", "Spearcher", "Sicklejug",
+  "Overall", "Shadowjug", "Spearsor", "Giant", "Merichu", "ArcherWall", "Gspam",
+  "Crawlerjug", "Spearcher", "Sicklejug",
   "Bomber", "MagiWall", "A&F"
 ];
 
@@ -238,7 +237,7 @@ const tierSlotHeights = {
 
 const tierSlotImageHeights = {
   1: 17,
-  //ShadowjugVP
+  //Shadowjug
   
   2: 22,
   //Spearsor
@@ -255,25 +254,22 @@ const tierSlotImageHeights = {
   6: 15,
   //Gspam
   
-  7: 18,
-  //ShadowripVL
-  
-  8: 21,
+  7: 21,
   //Crawlerjug
   
-  9: 22,
+  8: 22,
   //Spearcher
   
-  10: 23,
+  9: 23,
   //Sicklejug
   
-  11: 42,
+  10: 42,
   //Bomber
   
-  12: 22,
+  11: 22,
   //MagiWall
   
-  13: 15,
+  12: 15,
   //A&F
 };
 
@@ -345,7 +341,7 @@ function renderLeaderboard(){
     const rankClass = player.rankNumber <= 3 ? `rank-${player.rankNumber}` : "rank-default";
     const bgColor = rankBackgroundColors[player.rankNumber] || "#1d2735";
     
-    const tierHTML = player.tiers.slice(0, 13).map((tier, i) => {
+    const tierHTML = player.tiers.slice(0, 12).map((tier, i) => {
   const wrapper = document.createElement('div');
   wrapper.className = 'tier-slot-wrapper';
 
