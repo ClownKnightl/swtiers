@@ -51,87 +51,87 @@ const players = [
   {
     name: "Giantking",
     region: "EU",
-    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "Narri",
     region: "EU",
-    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "jerry",
     region: "AS",
-    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "epic",
     region: "EU",
-    tiers: ["Unranked", "LT5", "Unranked", "LT4", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "LT4", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "LT5", "Unranked", "LT4", "Unranked", "Unranked", "Unranked", "LT5", "LT4", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "prompt",
     region: "NA",
-    tiers: ["Unranked", "LT5", "Unranked", "LT4", "Unranked", "Unranked", "Unranked", "Unranked", "HT5", "LT4", "LT5", "Unranked", "LT5"],
+    tiers: ["Unranked", "LT5", "Unranked", "LT4", "Unranked", "Unranked", "Unranked", "HT5", "LT4", "LT5", "Unranked", "LT5"],
   },
   {
     name: "Dragonflypc",
     region: "AS",
-    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "HT5", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "HT5", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "Taha",
     region: "AS",
-    tiers: ["Unranked", "HT5", "Unranked", "LT4", "HT5", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "HT5", "Unranked", "LT4", "HT5", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "ĐeustchΩLųkerufex",
     region: "SA",
-    tiers: ["HT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["HT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "TheCrawlerPrince",
     region: "NA",
-    tiers: ["LT5", "Unranked", "LT5", "LT5", "Unranked", "LT5", "Unranked", "LT5", "Unranked", "HT5", "Unranked", "LT5", "Unranked"],
+    tiers: ["LT5", "Unranked", "LT5", "LT5", "Unranked", "LT5", "LT5", "Unranked", "HT5", "Unranked", "LT5", "Unranked"],
   },
   {
     name: "mouse",
     region: "AS",
-    tiers: ["Unranked", "Unranked", "Unranked", "LT4", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "LT4", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "MasterTahaIsTheBEST",
     region: "NA",
-    tiers: ["Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "NICETRY",
     region: "EU",
-    tiers: ["Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "Ooofffmain",
     region: "EU",
-    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "Larry",
     region: "NA",
-    tiers: ["LT5", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["LT5", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "EXX",
     region: "NA",
-    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "Untastic",
     region: "EU",
-    tiers: ["Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "CompetitiveSWS",
     region: "NA",
-    tiers: ["Unranked", "HT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "HT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   }
 ];
 
