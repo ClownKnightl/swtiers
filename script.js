@@ -212,7 +212,6 @@ const tierTabImages = [
   "tierr5.png",          // ArcherWall
   "tierr6.png",          // Gspam
   "tierr8.png",          // Crawlerjug
-  "tierr9.png",          // Spearcher
   "tierr10.png",         // Sicklejug
   "tierr14.png",         // Bomber
   "tierr15.png",         // MagiWall
@@ -221,7 +220,7 @@ const tierTabImages = [
 
 const tierTabNames = [
   "Overall", "Shadowjug", "Spearsor", "Giant", "Merichu", "ArcherWall", "Gspam",
-  "Crawlerjug", "Spearcher", "Sicklejug",
+  "Crawlerjug", "Sicklejug",
   "Bomber", "MagiWall", "A&F"
 ];
 
@@ -237,8 +236,6 @@ const tierSlotHeights = {
   9: 20,
   10: 20,
   11: 20,
-  12: 20,
-  13: 20,
 };
 
 const tierSlotImageHeights = {
@@ -263,19 +260,16 @@ const tierSlotImageHeights = {
   7: 21,
   //Crawlerjug
   
-  8: 22,
-  //Spearcher
-  
-  9: 23,
+  8: 23,
   //Sicklejug
   
-  10: 42,
+  9: 42,
   //Bomber
   
-  11: 22,
+  10: 22,
   //MagiWall
   
-  12: 15,
+  11: 15,
   //A&F
 };
 
@@ -347,7 +341,7 @@ function renderLeaderboard(){
     const rankClass = player.rankNumber <= 3 ? `rank-${player.rankNumber}` : "rank-default";
     const bgColor = rankBackgroundColors[player.rankNumber] || "#1d2735";
     
-    const tierHTML = player.tiers.slice(0, 12).map((tier, i) => {
+    const tierHTML = player.tiers.slice(0, 11).map((tier, i) => {
   const wrapper = document.createElement('div');
   wrapper.className = 'tier-slot-wrapper';
 
