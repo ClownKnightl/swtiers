@@ -44,7 +44,8 @@ const playerImages = {
   "Larry": "Wrathnar.png",
   "EXX": "EXX.png",
   "Untastic": "Untastic.png",
-  "CompetitiveSWS": "Civilbreak.png"
+  "CompetitiveSWS": "Civilbreak.png",
+  "Affirmativenerd": "Juggerknight.png"
 };
 
 const players = [
@@ -132,6 +133,11 @@ const players = [
     name: "CompetitiveSWS",
     region: "NA",
     tiers: ["Unranked", "HT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+  },
+  {
+    name: "Affirmativenerd",
+    region: "AS",
+    tiers: ["Unranked", "Unranked", "Unranked", "HT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   }
 ];
 
