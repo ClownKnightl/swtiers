@@ -62,7 +62,7 @@ const players = [
   {
     name: "jerry",
     region: "AS",
-    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "HT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "epic",
@@ -92,7 +92,7 @@ const players = [
   {
     name: "TheCrawlerPrince",
     region: "NA",
-    tiers: ["LT5", "Unranked", "LT5", "LT5", "Unranked", "LT5", "LT5", "Unranked", "HT5", "Unranked", "LT5", "Unranked"],
+    tiers: ["LT5", "Unranked", "LT5", "LT5", "Unranked", "HT5", "LT5", "Unranked", "HT5", "Unranked", "LT5", "Unranked"],
   },
   {
     name: "mouse",
@@ -112,7 +112,7 @@ const players = [
   {
     name: "Ooofffmain",
     region: "EU",
-    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "LT5", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5"],
   },
   {
     name: "Larry",
@@ -122,7 +122,7 @@ const players = [
   {
     name: "EXX",
     region: "NA",
-    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "HT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "Untastic",
