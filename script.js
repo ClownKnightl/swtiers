@@ -52,7 +52,7 @@ const players = [
   {
     name: "Giantking",
     region: "EU",
-    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked"],
+    tiers: ["HT5", "LT5", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "Narri",
@@ -67,12 +67,12 @@ const players = [
   {
     name: "epic",
     region: "EU",
-    tiers: ["Unranked", "LT5", "Unranked", "LT4", "Unranked", "Unranked", "Unranked", "LT4", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "LT5", "Unranked", "HT4", "Unranked", "Unranked", "Unranked", "LT4", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "prompt",
     region: "NA",
-    tiers: ["Unranked", "LT5", "Unranked", "LT4", "Unranked", "Unranked", "Unranked", "LT4", "LT5", "Unranked", "LT5"],
+    tiers: ["Unranked", "LT5", "Unranked", "HT4", "Unranked", "Unranked", "Unranked", "LT4", "LT5", "Unranked", "LT5"],
   },
   {
     name: "Dragonflypc",
@@ -82,27 +82,27 @@ const players = [
   {
     name: "Taha",
     region: "AS",
-    tiers: ["Unranked", "HT5", "Unranked", "LT4", "HT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "LT4", "Unranked", "HT4", "HT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "ĐeustchΩLųkerufex",
     region: "SA",
-    tiers: ["HT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["LT4", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "TheCrawlerPrince",
     region: "NA",
-    tiers: ["LT5", "Unranked", "LT5", "LT5", "Unranked", "HT5", "LT5", "HT5", "Unranked", "LT5", "Unranked"],
+    tiers: ["LT5", "Unranked", "LT5", "HT5", "Unranked", "HT5", "LT5", "HT5", "Unranked", "LT5", "Unranked"],
   },
   {
     name: "mouse",
     region: "AS",
-    tiers: ["Unranked", "Unranked", "Unranked", "LT4", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "HT4", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "MasterTahaIsTheBEST",
     region: "NA",
-    tiers: ["Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "HT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "NICETRY",
@@ -132,12 +132,12 @@ const players = [
   {
     name: "CompetitiveSWS",
     region: "NA",
-    tiers: ["Unranked", "HT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "LT4", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "Affirmativenerd",
     region: "AS",
-    tiers: ["Unranked", "Unranked", "Unranked", "HT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "LT4", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   }
 ];
 
