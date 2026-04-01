@@ -82,7 +82,7 @@ const players = [
   {
     name: "Taha",
     region: "AS",
-    tiers: ["Unranked", "LT4", "Unranked", "HT4", "HT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "HT4", "Unranked", "HT4", "HT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "ĐeustchΩLųkerufex",
@@ -127,12 +127,12 @@ const players = [
   {
     name: "Untastic",
     region: "EU",
-    tiers: ["Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "LT4", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "LT4", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "CompetitiveSWS",
     region: "NA",
-    tiers: ["Unranked", "LT4", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "HT4", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "Affirmativenerd",
