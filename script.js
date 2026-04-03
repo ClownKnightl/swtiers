@@ -166,19 +166,19 @@ const rankNameColors = {
 const GOLD_RANK_IMG = "Gol.png";
 
 const tierInfo = {
-  HT1: { name: "HT1", points: 40, image: "HT1__.png" },
-  HT2: { name: "HT2", points: 20, image: "HT2__.png" },
+  HT1: { name: "HT1", points: 45, image: "HT1__.png" },
+  HT2: { name: "HT2", points: 25, image: "HT2__.png" },
   HT3: { name: "HT3", points: 10, image: "HT3__.png" },
   HT4: { name: "HT4", points: 4, image: "HT4__.png" },
   HT5: { name: "HT5", points: 2, image: "HT5__.png" },
-  LT1: { name: "LT1", points: 30, image: "LT1__.png" },
+  LT1: { name: "LT1", points: 35, image: "LT1__.png" },
   LT2: { name: "LT2", points: 15, image: "LT2__.png" },
   LT3: { name: "LT3", points: 6, image: "LT3__.png" },
   LT4: { name: "LT4", points: 3, image: "LT4__.png" },
   LT5: { name: "LT5", points: 1, image: "LT5__.png" },
-  HT1R: { name: "HT1 (Retired)", points: 40, image: "rHT1__.png" },
-  HT2R: { name: "HT2 (Retired)", points: 20, image: "rHT2__.png" },
-  LT1R: { name: "LT1 (Retired)", points: 30, image: "rLT1__.png" },
+  HT1R: { name: "HT1 (Retired)", points: 45, image: "rHT1__.png" },
+  HT2R: { name: "HT2 (Retired)", points: 25, image: "rHT2__.png" },
+  LT1R: { name: "LT1 (Retired)", points: 35, image: "rLT1__.png" },
   LT2R: { name: "LT2 (Retired)", points: 15, image: "rLT2__.png" },
 };
 
@@ -972,9 +972,9 @@ const ranksWithPoints = [
 ];
 
 const tiersList = [
-  {code: "HT1", points: 40, tierImg: tierInfo.HT1.image},
-  {code: "LT1", points: 30, tierImg: tierInfo.LT1.image},
-  {code: "HT2", points: 20, tierImg: tierInfo.HT2.image},
+  {code: "HT1", points: 45, tierImg: tierInfo.HT1.image},
+  {code: "LT1", points: 35, tierImg: tierInfo.LT1.image},
+  {code: "HT2", points: 25, tierImg: tierInfo.HT2.image},
   {code: "LT2", points: 15, tierImg: tierInfo.LT2.image},
   {code: "HT3", points: 10, tierImg: tierInfo.HT3.image},
   {code: "LT3", points: 6,  tierImg: tierInfo.LT3.image},
