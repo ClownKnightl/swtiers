@@ -72,7 +72,7 @@ const players = [
   {
     name: "prompt",
     region: "NA",
-    tiers: ["Unranked", "LT5", "Unranked", "HT4", "Unranked", "Unranked", "Unranked", "LT4", "LT5", "Unranked", "LT5"],
+    tiers: ["Unranked", "LT5", "Unranked", "HT4", "Unranked", "Unranked", "Unranked", "LT4", "HT5", "Unranked", "HT5"],
   },
   {
     name: "Dragonflypc",
@@ -92,7 +92,7 @@ const players = [
   {
     name: "TheCrawlerPrince",
     region: "NA",
-    tiers: ["LT5", "Unranked", "LT5", "HT5", "Unranked", "HT5", "LT5", "HT5", "Unranked", "LT5", "Unranked"],
+    tiers: ["LT5", "HT5", "LT5", "HT5", "Unranked", "HT5", "LT5", "HT5", "LT5", "LT5", "LT5"],
   },
   {
     name: "mouse",
@@ -112,7 +112,7 @@ const players = [
   {
     name: "Ooofffmain",
     region: "EU",
-    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "LT5", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "LT5"],
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "LT5", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "HT5"],
   },
   {
     name: "Larry",
