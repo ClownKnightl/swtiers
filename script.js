@@ -47,13 +47,14 @@ const playerImages = {
   "CompetitiveSWS": "Civilbreak.png",
   "Affirmativenerd": "Juggerknight.png",
   "Vexli": "Vexli.png"
+  "mosdo": "mosdo.png"
 };
 
 const players = [
   {
     name: "Giantking",
     region: "EU",
-    tiers: ["HT5", "LT5", "Unranked", "LT5", "LT5", "Unranked", "Unranked", "HT4", "Unranked", "Unranked", "Unranked"],
+    tiers: ["HT5", "LT5", "Unranked", "LT4", "LT5", "Unranked", "LT5", "HT4", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "Narri",
@@ -73,7 +74,7 @@ const players = [
   {
     name: "prompt",
     region: "NA",
-    tiers: ["Unranked", "LT5", "Unranked", "HT4", "Unranked", "Unranked", "Unranked", "HT4", "HT5", "Unranked", "HT5"],
+    tiers: ["Unranked", "LT5", "Unranked", "HT4", "Unranked", "Unranked", "Unranked", "HT4", "LT4", "Unranked", "HT5"],
   },
   {
     name: "Dragonflypc",
@@ -144,6 +145,11 @@ const players = [
     name: "Vexli",
     region: "NA",
     tiers: ["Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked"],
+  },
+  {
+    name: "mosdo",
+    region: "NA",
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT5", "HT5", "Unranked", "Unranked"],
   }
 ];
 
