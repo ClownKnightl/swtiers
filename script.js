@@ -323,15 +323,26 @@ const rankBackgroundColors = {
 
 function renderTierIcon(tier, forTab = false){
   if(!tier) return "";
+
   if(forTab && tier.endsWith("R")) return "";
-  const info = tierInfo[tier] || {name:tier, points:0, image:DEFAULT_PROFILE};
+
+  let imgSrc = DEFAULT_PROFILE;
+  let altText = tier;
+
+  if(tier === "Unranked") {
+    imgSrc = "unranked_.png";
+    altText = "Unranked";
+  } else {
+    const info = tierInfo[tier] || {name:tier, points:0, image:DEFAULT_PROFILE};
+    imgSrc = info.image;
+    altText = info.name;
+  }
+
   return `<img class="tier-image"
-       src="${info.image}"
-       alt="${info.name}"
-       onmouseenter="showTierTooltip(event,'${tier}')"
-       onmouseleave="hideTierTooltip()"
-  />`;
-  
+              src="${imgSrc}"
+              alt="${altText}"
+              onmouseenter="showTierTooltip(event,'${tier}')"
+              onmouseleave="hideTierTooltip()" />`;
 }
 
 function getRankColorClass(rankNum) {
