@@ -46,7 +46,7 @@ const playerImages = {
   "Untastic": "Untastic.png",
   "CompetitiveSWS": "Civilbreak.png",
   "Affirmativenerd": "Juggerknight.png",
-  "Vexli": "Vexli.png"
+  "Vexli": "Vexli.png",
   "mosdo": "mosdo.png"
 };
 
