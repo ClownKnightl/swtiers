@@ -129,7 +129,7 @@ const players = [
   {
     name: "Untastic",
     region: "EU",
-    tiers: ["Unranked", "LT4", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "HT4", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "LT4", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "LT3", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "CompetitiveSWS",
