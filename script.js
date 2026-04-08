@@ -54,7 +54,7 @@ const players = [
   {
     name: "Giantking",
     region: "EU",
-    tiers: ["HT5", "LT5", "Unranked", "LT4", "LT5", "Unranked", "LT5", "HT4", "Unranked", "Unranked", "Unranked"],
+    tiers: ["HT5", "LT5", "LT5", "LT4", "LT5", "LT4", "LT5", "LT3", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "Narri",
@@ -69,12 +69,12 @@ const players = [
   {
     name: "epic",
     region: "EU",
-    tiers: ["Unranked", "LT5", "Unranked", "HT4", "Unranked", "Unranked", "Unranked", "HT4", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "LT5", "Unranked", "LT3", "Unranked", "Unranked", "Unranked", "LT3", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "prompt",
     region: "NA",
-    tiers: ["Unranked", "LT5", "Unranked", "HT4", "Unranked", "Unranked", "Unranked", "HT4", "LT4", "Unranked", "HT5"],
+    tiers: ["Unranked", "LT5", "Unranked", "LT3", "Unranked", "Unranked", "Unranked", "LT3", "LT4", "Unranked", "HT5"],
   },
   {
     name: "Dragonflypc",
@@ -84,7 +84,7 @@ const players = [
   {
     name: "Taha",
     region: "AS",
-    tiers: ["Unranked", "HT4", "Unranked", "HT4", "LT4", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "LT3", "Unranked", "LT3", "LT4", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "ĐeustchΩLųkerufex",
@@ -99,7 +99,7 @@ const players = [
   {
     name: "mouse",
     region: "AS",
-    tiers: ["Unranked", "Unranked", "Unranked", "HT4", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "LT3", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "MasterTahaIsTheBEST",
@@ -134,7 +134,7 @@ const players = [
   {
     name: "CompetitiveSWS",
     region: "NA",
-    tiers: ["Unranked", "HT4", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "LT3", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "Affirmativenerd",
@@ -148,7 +148,7 @@ const players = [
   },
   {
     name: "mosdo",
-    region: "NA",
+    region: "AU",
     tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "HT5", "Unranked", "LT5"],
   }
 ];
