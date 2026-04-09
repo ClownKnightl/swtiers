@@ -364,40 +364,48 @@ function renderLeaderboard(){
     const rankClass = player.rankNumber <= 3 ? `rank-${player.rankNumber}` : "rank-default";
     const bgColor = rankBackgroundColors[player.rankNumber] || "#1d2735";
     
-    const tierHTML = player.tiers.slice(0, 11).map((tier, i) => {
+    const tiersWithIndex = player.tiers.slice(0, 11)
+  .map((tier, index) => {
+    return {
+      tier,
+      points: tierPoints[tier] || 0,
+      originalIndex: index
+    };
+  })
+  .sort((a, b) => b.points - a.points);
+
+const tierHTML = tiersWithIndex.map(({ tier, originalIndex }) => {
   const wrapper = document.createElement('div');
   wrapper.className = 'tier-slot-wrapper';
 
   const slotImg = document.createElement('img');
-slotImg.className = 'slot-image';
-slotImg.src = tierTabImages[i + 1] || tierTabImages[tierTabImages.length - 1];
-slotImg.alt = `Tier slot ${i + 1}`;
+  slotImg.className = 'slot-image';
+  slotImg.src = tierTabImages[originalIndex + 1] || tierTabImages[tierTabImages.length - 1];
+  slotImg.alt = `Tier slot ${originalIndex + 1}`;
 
-const slotHeight = tierSlotImageHeights[i+1] || 24;
-slotImg.style.height = slotHeight + "px";
+  const slotHeight = tierSlotImageHeights[originalIndex + 1] || 24;
+  slotImg.style.height = slotHeight + "px";
 
   const tierImgWrapper = document.createElement('div');
 
-  const height = tierSlotHeights[i+1] || 24;
+  const height = tierSlotHeights[originalIndex + 1] || 24;
 
-if (tier === "Unranked") {
-  tierImgWrapper.innerHTML =
-  `<img class="tier-image"
-        src="unranked_.png"
-        alt="Unranked"
-        style="height:${height}px;" />`;
-} else {
-
-  const info = tierInfo[tier] || {name:tier,image:DEFAULT_PROFILE};
-
-  tierImgWrapper.innerHTML =
-  `<img class="tier-image"
-        src="${info.image}"
-        alt="${info.name}"
-        style="height:${height}px;"
-        onmouseenter="showTierTooltip(event,'${tier}')"
-        onmouseleave="hideTierTooltip()" />`;
-}
+  if (tier === "Unranked") {
+    tierImgWrapper.innerHTML =
+      `<img class="tier-image"
+            src="unranked_.png"
+            alt="Unranked"
+            style="height:${height}px;" />`;
+  } else {
+    const info = tierInfo[tier] || {name:tier,image:DEFAULT_PROFILE};
+    tierImgWrapper.innerHTML =
+      `<img class="tier-image"
+            src="${info.image}"
+            alt="${info.name}"
+            style="height:${height}px;"
+            onmouseenter="showTierTooltip(event,'${tier}')"
+            onmouseleave="hideTierTooltip()" />`;
+  }
 
   wrapper.appendChild(slotImg);
   if (tierImgWrapper.firstElementChild) wrapper.appendChild(tierImgWrapper.firstElementChild);
@@ -462,6 +470,13 @@ const tierBoxHeaders = {
   5: {text:"Tier 5", image:null, color:"#161e2a"}
 };
 
+function shuffleArray(array) {
+  for(let i = array.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
 function getPlayersGroupedByTier(slotIndex){
   const tierGroups = {1:[],2:[],3:[],4:[],5:[],0:[]};
 
@@ -482,7 +497,9 @@ function getPlayersGroupedByTier(slotIndex){
     });
   });
 
+  // Shuffle within each tier group, then sort by HT/LT to keep HT before LT after shuffle
   for(let i = 1; i <= 5; i++){
+    shuffleArray(tierGroups[i]);
     tierGroups[i].sort((a,b) => (a.isHT && b.isLT ? -1 : a.isLT && b.isHT ? 1 : 0));
   }
   return tierGroups;
