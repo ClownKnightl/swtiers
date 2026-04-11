@@ -54,7 +54,7 @@ const players = [
   {
     name: "Giantking",
     region: "EU",
-    tiers: ["HT5", "LT5", "LT5", "LT4", "LT5", "LT4", "LT5", "HT4", "Unranked", "Unranked", "Unranked"],
+    tiers: ["HT5", "LT5", "LT5", "LT4", "LT5", "LT4", "LT5", "LT4", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "Narri",
