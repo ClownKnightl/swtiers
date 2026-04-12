@@ -69,12 +69,12 @@ const players = [
   {
     name: "epic",
     region: "EU",
-    tiers: ["Unranked", "LT5", "Unranked", "LT2", "Unranked", "Unranked", "Unranked", "LT3", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "LT5", "Unranked", "HT3", "Unranked", "Unranked", "Unranked", "LT3", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "prompt",
     region: "NA",
-    tiers: ["Unranked", "LT5", "LT5", "LT3", "Unranked", "Unranked", "Unranked", "LT2", "LT4", "Unranked", "HT5"],
+    tiers: ["Unranked", "LT5", "LT5", "LT3", "Unranked", "Unranked", "Unranked", "HT3", "LT4", "Unranked", "HT5"],
   },
   {
     name: "Dragonflypc",
