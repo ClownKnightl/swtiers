@@ -94,7 +94,7 @@ const players = [
   {
     name: "TheCrawlerPrince",
     region: "NA",
-    tiers: ["LT5", "HT5", "LT5", "HT5", "Unranked", "HT5", "LT5", "LT4", "LT5", "LT5", "LT5"],
+    tiers: ["LT5", "HT5", "LT5", "HT5", "LT5", "HT5", "LT5", "LT4", "LT5", "LT5", "LT5"],
   },
   {
     name: "mouse",
@@ -139,7 +139,7 @@ const players = [
   {
     name: "Affirmativenerd",
     region: "AS",
-    tiers: ["Unranked", "Unranked", "Unranked", "LT4", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "HT5", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "Vexli",
