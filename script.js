@@ -54,7 +54,7 @@ const players = [
   {
     name: "Giantking",
     region: "EU",
-    tiers: ["HT5", "LT5", "LT5", "LT4", "LT5", "LT4", "LT5", "LT4", "Unranked", "Unranked", "Unranked"],
+    tiers: ["HT5", "LT5", "LT5", "LT4", "LT5", "LT4", "LT5", "LT4", "HT5", "HT5", "HT5"],
   },
   {
     name: "Narri",
@@ -74,17 +74,17 @@ const players = [
   {
     name: "prompt",
     region: "NA",
-    tiers: ["Unranked", "LT5", "LT5", "LT3", "Unranked", "Unranked", "Unranked", "HT3", "LT4", "Unranked", "HT5"],
+    tiers: ["Unranked", "LT5", "LT5", "LT3", "Unranked", "Unranked", "Unranked", "HT3", "LT3", "Unranked", "LT4"],
   },
   {
     name: "Dragonflypc",
     region: "AS",
-    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT4", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "HT4", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "Taha",
     region: "AS",
-    tiers: ["Unranked", "LT3", "Unranked", "LT3", "LT4", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "LT3", "Unranked", "LT2", "LT4", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "ĐeustchΩLųkerufex",
@@ -114,7 +114,7 @@ const players = [
   {
     name: "Ooofffmain",
     region: "EU",
-    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "HT5", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "HT5"],
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "HT5", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "LT4"],
   },
   {
     name: "Larry",
@@ -149,7 +149,7 @@ const players = [
   {
     name: "mosdo",
     region: "AU",
-    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "HT5", "Unranked", "LT5"],
+    tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT4", "Unranked", "LT5"],
   }
 ];
 
