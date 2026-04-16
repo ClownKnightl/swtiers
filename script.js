@@ -294,7 +294,7 @@ function getRank(points){
   if(points >= 100) return "Combat Z4CK";
   if(points >= 55) return "Combat Wesly";
   if(points >= 30) return "Combat Vin";
-  if(points >= 17) return "Combat Maverick";
+  if(points >= 20) return "Combat Maverick";
   if(points >= 12) return "Combat Willow";
   if(points >= 1) return "Combat Ruth";
   return "Unranked";
@@ -1006,7 +1006,7 @@ const ranksWithPoints = [
   {name: "Combat Z4CK", points: 100},
   {name: "Combat Wesly", points: 55},
   {name: "Combat Vin", points: 30},
-  {name: "Combat Maverick", points: 17},
+  {name: "Combat Maverick", points: 20},
   {name: "Combat Willow", points: 12},
   {name: "Combat Ruth", points: 1}
 ];
