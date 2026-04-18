@@ -119,7 +119,7 @@ const players = [
   {
     name: "Larry",
     region: "NA",
-    tiers: ["LT5", "LT5", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "HT5", "Unranked", "Unranked", "Unranked"],
+    tiers: ["LT5", "LT5", "Unranked", "LT5", "Unranked", "Unranked", "LT5", "HT5", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "EXX",
