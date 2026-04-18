@@ -193,6 +193,7 @@ const tierInfo = {
   HT2R: { name: "HT2 (Retired)", points: 25, image: "rHT2__.png" },
   LT1R: { name: "LT1 (Retired)", points: 35, image: "rLT1__.png" },
   LT2R: { name: "LT2 (Retired)", points: 15, image: "rLT2__.png" },
+  Unranked: { name: "Unranked", points: 0, image: "unranked.png" },
   Locked: { name: "Locked", points: 0, image: "lock.png" }
 };
 
