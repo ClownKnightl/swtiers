@@ -6,7 +6,8 @@ const tierPoints = {
   "HT5": 2,  "LT5": 1,
   "HT1R": 45,  "LT1R": 35,
   "HT2R": 25,  "LT2R": 15,
-  "Unranked": 0
+  "Unranked": 0,
+  "Locked": 0,
 };
 
 const DEFAULT_PROFILE = "default-tierr.png";
@@ -54,7 +55,7 @@ const players = [
   {
     name: "Giantking",
     region: "EU",
-    tiers: ["HT5", "LT5", "LT5", "LT4", "LT5", "LT4", "LT5", "LT4", "HT5", "HT5", "HT5"],
+    tiers: ["HT5", "LT5", "Locked", "LT4", "LT5", "LT4", "LT5", "LT4", "HT5", "HT5", "HT5"],
   },
   {
     name: "Narri",
@@ -74,7 +75,7 @@ const players = [
   {
     name: "prompt",
     region: "NA",
-    tiers: ["Unranked", "LT5", "LT5", "LT3", "Unranked", "Unranked", "Unranked", "HT3", "LT3", "Unranked", "LT4"],
+    tiers: ["Unranked", "LT5", "Locked", "LT3", "Unranked", "Unranked", "Unranked", "HT3", "LT3", "Unranked", "LT4"],
   },
   {
     name: "Dragonflypc",
@@ -94,7 +95,7 @@ const players = [
   {
     name: "TheCrawlerPrince",
     region: "NA",
-    tiers: ["LT5", "HT5", "LT5", "HT5", "LT5", "HT5", "LT5", "LT4", "LT5", "LT5", "LT5"],
+    tiers: ["LT5", "HT5", "Locked", "HT5", "LT5", "HT5", "LT5", "LT4", "LT5", "LT5", "LT5"],
   },
   {
     name: "mouse",
@@ -109,7 +110,7 @@ const players = [
   {
     name: "NICETRY",
     region: "EU",
-    tiers: ["Unranked", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Locked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "Ooofffmain",
@@ -129,7 +130,7 @@ const players = [
   {
     name: "Untastic",
     region: "EU",
-    tiers: ["Unranked", "LT4", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "LT3", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "LT4", "Locked", "Unranked", "Unranked", "Unranked", "Unranked", "LT3", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "CompetitiveSWS",
@@ -192,6 +193,7 @@ const tierInfo = {
   HT2R: { name: "HT2 (Retired)", points: 25, image: "rHT2__.png" },
   LT1R: { name: "LT1 (Retired)", points: 35, image: "rLT1__.png" },
   LT2R: { name: "LT2 (Retired)", points: 15, image: "rLT2__.png" },
+  Locked: { name: "Locked", points: 0, image: "lock.png" }
 };
 
 const ARROW_UP = "Upup.png";
