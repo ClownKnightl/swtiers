@@ -55,7 +55,7 @@ const players = [
   {
     name: "Giantking",
     region: "EU",
-    tiers: ["HT5", "LT5", "Locked", "LT4", "LT5", "LT4", "LT5", "LT4", "HT5", "HT5", "HT5"],
+    tiers: ["HT5", "LT5", "Locked", "HT5", "LT5", "LT4", "LT5", "LT4", "HT5", "HT5", "HT5"],
   },
   {
     name: "Narri",
@@ -95,7 +95,7 @@ const players = [
   {
     name: "TheCrawlerPrince",
     region: "NA",
-    tiers: ["LT5", "HT5", "Locked", "HT5", "LT5", "HT5", "LT5", "LT4", "LT5", "LT5", "LT5"],
+    tiers: ["LT5", "HT5", "Locked", "LT5", "LT5", "HT5", "LT5", "LT4", "LT5", "LT5", "LT5"],
   },
   {
     name: "mouse",
@@ -135,12 +135,12 @@ const players = [
   {
     name: "CompetitiveSWS",
     region: "NA",
-    tiers: ["Unranked", "LT3", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "LT3", "Unranked", "LT4", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "Affirmativenerd",
     region: "AS",
-    tiers: ["Unranked", "Unranked", "Unranked", "HT5", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
+    tiers: ["Unranked", "Unranked", "Unranked", "LT5", "Unranked", "LT5", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked"],
   },
   {
     name: "Vexli",
