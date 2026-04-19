@@ -149,7 +149,7 @@ const players = [
   },
   {
     name: "mosdo",
-    region: "AU",
+    region: "EU",
     tiers: ["Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "Unranked", "LT4", "Unranked", "LT5"],
   }
 ];
